@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon" href="./Background/Avatar.png">
+    <title>Form Assignment</title>
+</head>
+ 
+<body>
+    <div class="container">
+        <br>
+        
+        <form action="">
+            <h1><mark>HTML Form Assignment</mark></h1>
+            <label for="name">Name:</label> <br>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required> <br>
+
+            <label for="email">Email:</label> <br>
+            <input type="email" id="email" name="email" placeholder="Enter your Password" required> <br>
+
+            <label for="Password">Password:</label> <br>
+            <input type="password" id="password" name="password" placeholder="Enter a valid Password" required> <br>
+
+            <label for="number">Number:</label> <br>
+            <input type="number" id="number" name="number" placeholder="Enter a valid Number"> <br>
+
+            <label for="tel-num">Telephone Number:</label> <br>
+            <input type="tel" id="tel-num" name="tel-num" placeholder="Enter a valid Telephone Number"> <br>
+
+            <label for="date-time">Date & Time:</label> <br>
+            <input type="datetime-local" id="datetime-local" required> <br>
+
+            <label for="url">Facebook URL:</label> <br>
+            <input type="url" id="url" name="url" placeholder="Enter URL"> <br>
+
+            <label for="search">Search:</label> <br>
+            <input type="search" id="search" name="search" placeholder="Search"> <br>
+
+            <label for="week">Week:</label> <br>
+            <input type="week" id="week" name="week" required> <br>
+            <br>
+
+            <!--Colum for Level of Education and Upload files-->
+            <div class="row2">
+                <div class="col-1">
+                    <label for="level-of-Education">Level of Education:</label> <br>
+                    <select name="level-of-Education" id="level-of-Education">
+                        <option value="Primary_School">Primary</option>
+                        <option value="High_School">High School Graduate</option>
+                        <option value="University_Student">University Student</option>
+                        <option disabled value="University_Graduate">University Graduate</option>
+                    </select> <br>
+                    <br>
+                </div>
+
+                <div class="col-2">
+                    <label for="file">Upload File:</label>
+                    <input type="file" name="file" id="file" accept=".jpg, .pdf"> <br>
+                </div>
+            </div>
+
+            <!-- ------------Colum for Select hobbit and Gender----------- -->
+            <div class="row">
+                <div class="select">
+                    <label for="habits">Selecte your Hobbit:</label> <br>
+                    <input type="checkbox" id="Soccer" name="Soccer" required>Soccer <br>
+                    <input type="checkbox" id="Reading" name="Reading" required>Reading Books <br>
+                    <input type="checkbox" id="Programming" name="Programming" required>Programming <br>
+                    <br>
+                </div>
+
+                <div class="gender">
+                    <label for="gender">Gender</label> <br>
+                    <input type="radio" name="female">Female <br>
+                    <input type="radio" name="Male">Male <br>
+                    <input type="radio" name="perfer-n-s">Perfer not to Say <br>
+                    <br>
+                </div>
+            </div>
+
+
+            <!-- ------------Colum for Range and Color----------- -->
+
+            <div class="row3">
+                <div class="">
+                    <label for="range">Range:</label> <br>
+                    <input type="range" id="range" name="range"> <br>
+                </div>
+
+                <div class="color">
+                    <label for="color">Color:</label>
+                    <input type="color" id="color" name="color"> <br>
+                    <br>
+                </div>
+            </div>
+
+
+            <input type="submit" value="submit" onclick="submitBtn()">
+
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
